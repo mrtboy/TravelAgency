@@ -86,11 +86,19 @@ namespace TravelAgency.View
             {
                 entertainment = int.Parse(cbEvents.Text);
             }
-            // Save Booking Information
-            Booking booking = new Booking(dtStartDate.Text, int.Parse(txtNights.Text), txtDestination.Text, entertainment,
-                hotel, transportation);
 
-            bookingController.NewBooking(booking);
+            try
+            {// Save Booking Information
+                Booking booking = new Booking(dtStartDate.Text, int.Parse(txtNights.Text), txtDestination.Text, entertainment,
+               hotel, transportation);
+
+                bookingController.NewBooking(booking);
+            } catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
+           
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)
