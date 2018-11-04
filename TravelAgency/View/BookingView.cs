@@ -18,24 +18,32 @@ namespace TravelAgency.View
         CustomerController customerController;
         BookingController bookingController;
         HotelController hotelController;
+        TransportationController transportationController;
         public BookingView(int customerId)
         {
             customerController = new CustomerController();
             bookingController = new BookingController();
             hotelController = new HotelController();
+            transportationController = new TransportationController();
             _customerId = customerId;
             InitializeComponent();
-            fillHotels();
+            fillDropDowns();
         }
 
-        private void fillHotels()
+        private void fillDropDowns()
         {
-            DataSet flights = hotelController.GetAllHotels();
-            List<string> flightId = new List<string>();
+            DataSet hotel = hotelController.GetAllHotels();
             cbHotels.Items.Clear();
-            for (int i = 0; i < flights.Tables[0].Rows.Count; i++)
+            for (int i = 0; i < hotel.Tables[0].Rows.Count; i++)
             {
-                cbHotels.Items.Add(flights.Tables[0].Rows[i][0].ToString());
+                cbHotels.Items.Add(hotel.Tables[0].Rows[i][0].ToString());
+            }
+
+            DataSet transportations = transportationController.GetAllTransportation();
+            cbTransportation.Items.Clear();
+            for (int i = 0; i < transportations.Tables[0].Rows.Count; i++)
+            {
+                cbTransportation.Items.Add(transportations.Tables[0].Rows[i][0].ToString());
             }
         }
 

@@ -57,5 +57,21 @@ namespace TravelAgency.Controller
                 return null;
             }
         }
+
+        public DataSet GetPackagesByCustomerId(int id)
+        {
+            try
+            {
+                DbConn db = DbConn.createConnection();
+                string query = String.Format("SELECT * FROM TA_Customer Where Id = {0}",
+                   id);
+
+                return db.ExecuteQuery(query);
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
     }
 }
