@@ -80,6 +80,7 @@
             this.btnTours.TabIndex = 3;
             this.btnTours.Text = "Show Solled Tours";
             this.btnTours.UseVisualStyleBackColor = false;
+            this.btnTours.Click += new System.EventHandler(this.btnTours_Click);
             // 
             // btnBookings
             // 

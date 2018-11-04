@@ -19,12 +19,15 @@ namespace TravelAgency.View
         BookingController bookingController;
         HotelController hotelController;
         TransportationController transportationController;
+        EntertainmentController entertainmentController;
+
         public BookingView(int customerId)
         {
             customerController = new CustomerController();
             bookingController = new BookingController();
             hotelController = new HotelController();
             transportationController = new TransportationController();
+            entertainmentController = new EntertainmentController();
             _customerId = customerId;
             InitializeComponent();
             fillDropDowns();
@@ -45,6 +48,13 @@ namespace TravelAgency.View
             {
                 cbTransportation.Items.Add(transportations.Tables[0].Rows[i][0].ToString());
             }
+
+            DataSet entertainment = entertainmentController.GetAllEntertainment();
+            cbEvents.Items.Clear();
+            for (int i = 0; i < entertainment.Tables[0].Rows.Count; i++)
+            {
+                cbEvents.Items.Add(entertainment.Tables[0].Rows[i][0].ToString());
+            }
         }
 
         private void getUserById()
@@ -60,12 +70,37 @@ namespace TravelAgency.View
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            int hotel = 0;
+            int transportation = 0;
+            int entertainment =0;
 
+            if (cbHotels.Text != "")
+            {
+                 hotel = int.Parse(cbHotels.Text);
+            }
+            if(cbTransportation.Text != "")
+            {
+                transportation = int.Parse(cbTransportation.Text);
+            }
+            if (cbEvents.Text != "")
+            {
+                entertainment = int.Parse(cbEvents.Text);
+            }
             // Save Booking Information
-            Booking booking = new Booking(dtStartDate.Text, Convert.ToInt32(txtNights.Text), txtDestination.Text, Convert.ToInt32(cbEvents.Text),
-                Convert.ToInt32(cbHotels.Text), Convert.ToInt32(cbTransportation.Text));
+            Booking booking = new Booking(dtStartDate.Text, int.Parse(txtNights.Text), txtDestination.Text, entertainment,
+                hotel, transportation);
 
             bookingController.NewBooking(booking);
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void BookingView_Load(object sender, EventArgs e)
+        {
+            CenterToScreen();
         }
     }
 }

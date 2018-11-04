@@ -39,5 +39,13 @@ namespace TravelAgency.View
             nextForm.ShowDialog();
             this.Close();
         }
+
+        private void btnTours_Click(object sender, EventArgs e)
+        {
+            Booked_Packages nextForm = new Booked_Packages();
+            this.Hide();
+            nextForm.ShowDialog();
+            this.Close();
+        }
     }
 }

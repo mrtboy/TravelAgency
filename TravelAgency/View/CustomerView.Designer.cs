@@ -45,11 +45,11 @@
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dgCustomer = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtCustomerId = new System.Windows.Forms.TextBox();
             this.lblMessage2 = new System.Windows.Forms.Label();
+            this.txtCustomerId = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dgCustomer = new System.Windows.Forms.DataGridView();
             this.process1 = new System.Diagnostics.Process();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -237,13 +237,33 @@
             this.panel2.Size = new System.Drawing.Size(542, 431);
             this.panel2.TabIndex = 3;
             // 
-            // dgCustomer
+            // lblMessage2
             // 
-            this.dgCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgCustomer.Location = new System.Drawing.Point(0, 0);
-            this.dgCustomer.Name = "dgCustomer";
-            this.dgCustomer.Size = new System.Drawing.Size(542, 281);
-            this.dgCustomer.TabIndex = 0;
+            this.lblMessage2.AutoSize = true;
+            this.lblMessage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMessage2.ForeColor = System.Drawing.Color.Red;
+            this.lblMessage2.Location = new System.Drawing.Point(174, 406);
+            this.lblMessage2.Name = "lblMessage2";
+            this.lblMessage2.Size = new System.Drawing.Size(0, 16);
+            this.lblMessage2.TabIndex = 16;
+            // 
+            // txtCustomerId
+            // 
+            this.txtCustomerId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCustomerId.Location = new System.Drawing.Point(275, 317);
+            this.txtCustomerId.Name = "txtCustomerId";
+            this.txtCustomerId.Size = new System.Drawing.Size(49, 26);
+            this.txtCustomerId.TabIndex = 13;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(173, 320);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(96, 20);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "Customer Id";
             // 
             // button1
             // 
@@ -259,33 +279,13 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label7
+            // dgCustomer
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(173, 320);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(96, 20);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "Customer Id";
-            // 
-            // txtCustomerId
-            // 
-            this.txtCustomerId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCustomerId.Location = new System.Drawing.Point(275, 317);
-            this.txtCustomerId.Name = "txtCustomerId";
-            this.txtCustomerId.Size = new System.Drawing.Size(49, 26);
-            this.txtCustomerId.TabIndex = 13;
-            // 
-            // lblMessage2
-            // 
-            this.lblMessage2.AutoSize = true;
-            this.lblMessage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMessage2.ForeColor = System.Drawing.Color.Red;
-            this.lblMessage2.Location = new System.Drawing.Point(174, 406);
-            this.lblMessage2.Name = "lblMessage2";
-            this.lblMessage2.Size = new System.Drawing.Size(0, 16);
-            this.lblMessage2.TabIndex = 16;
+            this.dgCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgCustomer.Location = new System.Drawing.Point(0, 0);
+            this.dgCustomer.Name = "dgCustomer";
+            this.dgCustomer.Size = new System.Drawing.Size(542, 281);
+            this.dgCustomer.TabIndex = 0;
             // 
             // process1
             // 
@@ -297,7 +297,7 @@
             this.process1.StartInfo.UserName = "";
             this.process1.SynchronizingObject = this;
             // 
-            // Customer
+            // CustomerView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -307,7 +307,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
-            this.Name = "Customer";
+            this.Name = "CustomerView";
             this.Text = "Customer Registration";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Home_FormClosed);
             this.Load += new System.EventHandler(this.Home_Load);

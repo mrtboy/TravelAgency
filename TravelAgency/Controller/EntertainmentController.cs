@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,6 +23,21 @@ namespace TravelAgency.Controller
             catch (Exception)
             {
                 return false;
+            }
+        }
+
+        public DataSet GetAllEntertainment()
+        {
+            try
+            {
+                DbConn db = DbConn.createConnection();
+                string query = "select * from TA_Transportation";
+
+                return db.ExecuteQuery(query);
+            }
+            catch (Exception)
+            {
+                return null;
             }
         }
     }
