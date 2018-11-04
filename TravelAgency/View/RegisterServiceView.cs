@@ -57,12 +57,13 @@ namespace TravelAgency.View
                     Entertainment entertainment = new Entertainment(Convert.ToDouble(txtEnterPrice.Text), dtEventEntertainment.Text,
                          txtTitleEntertainment.Text, txtDescriptionEntertainment.Text);
                     entertainmentController.AddEvent(entertainment);
-
                 }
+
+                lblMessage.Text = "Success";
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                lblMessage.Text=ex.Message;
             }
         }
 

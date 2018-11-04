@@ -73,5 +73,20 @@ namespace TravelAgency.Controller
                 return null;
             }
         }
+
+        public bool DeleteCustomer(int id)
+        {
+            try
+            {
+                string query = String.Format("DELETE FROM TA_Customer WHERE Id = {0}",
+                    id);
+                DbConn db = DbConn.createConnection();
+                return db.createQuery(query);
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
     }
 }

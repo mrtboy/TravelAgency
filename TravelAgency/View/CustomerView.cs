@@ -77,18 +77,38 @@ namespace TravelAgency.View
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(txtCustomerId.Text != "" || txtCustomerId.GetType() == typeof(int))
+            try
             {
-                BookingView nextForm = new BookingView(Convert.ToInt32(txtCustomerId.Text));
-                this.Hide();
-                nextForm.ShowDialog();
-                this.Close();
+                if (txtCustomerId.Text != "" || txtCustomerId.GetType() == typeof(int))
+                {
+                    BookingView nextForm = new BookingView(Convert.ToInt32(txtCustomerId.Text));
+                    this.Hide();
+                    nextForm.ShowDialog();
+                    this.Close();
+                }
+                else
+                {
+                    lblMessage2.Text = "Select the customer Id from Table";
+                }
             }
-            else
+            catch(Exception ex)
             {
-                lblMessage2.Text = "Select the customer Id from Table";
+                lblMessage2.Text = ex.Message;
             }
+            
            
+        }
+
+        private void btnDeleteCustomer_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                customerController.DeleteCustomer(Int32.Parse(txtCustomerId.Text));
+                UpdateCustomerGrid();
+            } catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

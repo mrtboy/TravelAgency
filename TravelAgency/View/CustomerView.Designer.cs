@@ -45,12 +45,14 @@
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnDeleteCustomer = new System.Windows.Forms.Button();
             this.lblMessage2 = new System.Windows.Forms.Label();
             this.txtCustomerId = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.dgCustomer = new System.Windows.Forms.DataGridView();
             this.process1 = new System.Diagnostics.Process();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -71,9 +73,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::TravelAgency.Properties.Resources.kisspng_logo_blue_ridge_rock_festival_2018_logo_mountain_5b5cc9dab9a066_0694187215328076427603;
-            this.pictureBox1.Location = new System.Drawing.Point(125, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(60, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(191, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -123,7 +125,7 @@
             this.dtDob.Location = new System.Drawing.Point(103, 205);
             this.dtDob.Name = "dtDob";
             this.dtDob.Size = new System.Drawing.Size(200, 20);
-            this.dtDob.TabIndex = 8;
+            this.dtDob.TabIndex = 5;
             // 
             // panel1
             // 
@@ -164,7 +166,7 @@
             this.btnSubmit.Location = new System.Drawing.Point(47, 304);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(92, 36);
-            this.btnSubmit.TabIndex = 14;
+            this.btnSubmit.TabIndex = 6;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = false;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
@@ -189,7 +191,7 @@
             this.txtPhone.Location = new System.Drawing.Point(90, 158);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(213, 26);
-            this.txtPhone.TabIndex = 12;
+            this.txtPhone.TabIndex = 4;
             // 
             // txtAddress
             // 
@@ -197,7 +199,7 @@
             this.txtAddress.Location = new System.Drawing.Point(90, 106);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(213, 26);
-            this.txtAddress.TabIndex = 11;
+            this.txtAddress.TabIndex = 3;
             // 
             // txtLastName
             // 
@@ -205,7 +207,7 @@
             this.txtLastName.Location = new System.Drawing.Point(90, 56);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(213, 26);
-            this.txtLastName.TabIndex = 10;
+            this.txtLastName.TabIndex = 2;
             // 
             // txtFirstName
             // 
@@ -213,7 +215,7 @@
             this.txtFirstName.Location = new System.Drawing.Point(90, 12);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(213, 26);
-            this.txtFirstName.TabIndex = 9;
+            this.txtFirstName.TabIndex = 1;
             // 
             // label6
             // 
@@ -227,6 +229,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.btnDeleteCustomer);
             this.panel2.Controls.Add(this.lblMessage2);
             this.panel2.Controls.Add(this.txtCustomerId);
             this.panel2.Controls.Add(this.label7);
@@ -236,6 +239,20 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(542, 431);
             this.panel2.TabIndex = 3;
+            // 
+            // btnDeleteCustomer
+            // 
+            this.btnDeleteCustomer.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnDeleteCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDeleteCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteCustomer.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnDeleteCustomer.Location = new System.Drawing.Point(72, 358);
+            this.btnDeleteCustomer.Name = "btnDeleteCustomer";
+            this.btnDeleteCustomer.Size = new System.Drawing.Size(137, 40);
+            this.btnDeleteCustomer.TabIndex = 17;
+            this.btnDeleteCustomer.Text = "Delete Customer";
+            this.btnDeleteCustomer.UseVisualStyleBackColor = false;
+            this.btnDeleteCustomer.Click += new System.EventHandler(this.btnDeleteCustomer_Click);
             // 
             // lblMessage2
             // 
@@ -250,16 +267,16 @@
             // txtCustomerId
             // 
             this.txtCustomerId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCustomerId.Location = new System.Drawing.Point(275, 317);
+            this.txtCustomerId.Location = new System.Drawing.Point(275, 301);
             this.txtCustomerId.Name = "txtCustomerId";
             this.txtCustomerId.Size = new System.Drawing.Size(49, 26);
-            this.txtCustomerId.TabIndex = 13;
+            this.txtCustomerId.TabIndex = 7;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(173, 320);
+            this.label7.Location = new System.Drawing.Point(173, 304);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(96, 20);
             this.label7.TabIndex = 3;
@@ -271,19 +288,23 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(177, 358);
+            this.button1.Location = new System.Drawing.Point(275, 358);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(137, 40);
-            this.button1.TabIndex = 2;
+            this.button1.TabIndex = 8;
             this.button1.Text = "Creating Travelling Package";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dgCustomer
             // 
+            this.dgCustomer.AllowUserToAddRows = false;
+            this.dgCustomer.AllowUserToDeleteRows = false;
+            this.dgCustomer.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgCustomer.Location = new System.Drawing.Point(0, 0);
             this.dgCustomer.Name = "dgCustomer";
+            this.dgCustomer.ReadOnly = true;
             this.dgCustomer.Size = new System.Drawing.Size(542, 281);
             this.dgCustomer.TabIndex = 0;
             // 
@@ -297,12 +318,24 @@
             this.process1.StartInfo.UserName = "";
             this.process1.SynchronizingObject = this;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label12.Location = new System.Drawing.Point(257, 16);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(419, 46);
+            this.label12.TabIndex = 10;
+            this.label12.Text = "Everest Travel Agency";
+            // 
             // CustomerView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(935, 566);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
@@ -347,5 +380,7 @@
         private System.Windows.Forms.TextBox txtCustomerId;
         private System.Windows.Forms.Label lblMessage2;
         private System.Diagnostics.Process process1;
+        private System.Windows.Forms.Button btnDeleteCustomer;
+        private System.Windows.Forms.Label label12;
     }
 }

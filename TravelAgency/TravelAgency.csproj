@@ -47,6 +47,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgencyDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AgencyDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AgencyDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AgencyDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AgencyDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AgencyDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Controller\BookingController.cs" />
     <Compile Include="Controller\CustomerController.cs" />
     <Compile Include="Controller\EntertainmentController.cs" />
@@ -117,6 +132,39 @@
     <EmbeddedResource Include="View\RegisterServiceView.resx">
       <DependentUpon>RegisterServiceView.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="AgencyDataSet.xsc">
+      <DependentUpon>AgencyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AgencyDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AgencyDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AgencyDataSet.xss">
+      <DependentUpon>AgencyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AgencyDataSet1.xsc">
+      <DependentUpon>AgencyDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AgencyDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AgencyDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AgencyDataSet1.xss">
+      <DependentUpon>AgencyDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AgencyDataSet2.xsc">
+      <DependentUpon>AgencyDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AgencyDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AgencyDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AgencyDataSet2.xss">
+      <DependentUpon>AgencyDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
