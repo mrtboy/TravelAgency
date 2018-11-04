@@ -65,25 +65,34 @@
             // 
             // dgHotels
             // 
+            this.dgHotels.AllowUserToAddRows = false;
+            this.dgHotels.AllowUserToDeleteRows = false;
             this.dgHotels.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgHotels.Location = new System.Drawing.Point(25, 127);
             this.dgHotels.Name = "dgHotels";
+            this.dgHotels.ReadOnly = true;
             this.dgHotels.Size = new System.Drawing.Size(295, 173);
             this.dgHotels.TabIndex = 10;
             // 
             // dgEntertainment
             // 
+            this.dgEntertainment.AllowUserToAddRows = false;
+            this.dgEntertainment.AllowUserToDeleteRows = false;
             this.dgEntertainment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgEntertainment.Location = new System.Drawing.Point(344, 127);
             this.dgEntertainment.Name = "dgEntertainment";
+            this.dgEntertainment.ReadOnly = true;
             this.dgEntertainment.Size = new System.Drawing.Size(295, 173);
             this.dgEntertainment.TabIndex = 11;
             // 
             // dgtransportation
             // 
+            this.dgtransportation.AllowUserToAddRows = false;
+            this.dgtransportation.AllowUserToDeleteRows = false;
             this.dgtransportation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgtransportation.Location = new System.Drawing.Point(659, 127);
             this.dgtransportation.Name = "dgtransportation";
+            this.dgtransportation.ReadOnly = true;
             this.dgtransportation.Size = new System.Drawing.Size(295, 173);
             this.dgtransportation.TabIndex = 12;
             // 
