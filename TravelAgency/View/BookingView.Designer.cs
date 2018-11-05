@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.label12 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.lblCustomerName = new System.Windows.Forms.Label();
             this.lblMessage = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.cbTransportation = new System.Windows.Forms.ComboBox();
@@ -83,6 +84,7 @@
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel4.Controls.Add(this.lblCustomerName);
             this.panel4.Controls.Add(this.lblMessage);
             this.panel4.Controls.Add(this.btnSubmit);
             this.panel4.Controls.Add(this.cbTransportation);
@@ -103,7 +105,17 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(851, 308);
             this.panel4.TabIndex = 6;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            // 
+            // lblCustomerName
+            // 
+            this.lblCustomerName.AutoSize = true;
+            this.lblCustomerName.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblCustomerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustomerName.ForeColor = System.Drawing.Color.CadetBlue;
+            this.lblCustomerName.Location = new System.Drawing.Point(213, 14);
+            this.lblCustomerName.Name = "lblCustomerName";
+            this.lblCustomerName.Size = new System.Drawing.Size(0, 25);
+            this.lblCustomerName.TabIndex = 26;
             // 
             // lblMessage
             // 
@@ -234,7 +246,7 @@
             this.lblName.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.ForeColor = System.Drawing.Color.CadetBlue;
-            this.lblName.Location = new System.Drawing.Point(300, 14);
+            this.lblName.Location = new System.Drawing.Point(207, 14);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(0, 25);
             this.lblName.TabIndex = 16;
@@ -303,9 +315,9 @@
             this.label6.ForeColor = System.Drawing.Color.CadetBlue;
             this.label6.Location = new System.Drawing.Point(16, 14);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(292, 25);
+            this.label6.Size = new System.Drawing.Size(195, 25);
             this.label6.TabIndex = 2;
-            this.label6.Text = "Booking info for Customer ";
+            this.label6.Text = "Booking Package";
             // 
             // pictureBox1
             // 
@@ -367,14 +379,12 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.DateTimePicker dtStartDate;
         private System.Windows.Forms.TextBox txtDestination;
         private System.Windows.Forms.TextBox txtNights;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbTransportation;
@@ -392,5 +402,8 @@
         private System.Windows.Forms.BindingSource tATransportationBindingSource;
         private AgencyDataSet2TableAdapters.TA_TransportationTableAdapter tA_TransportationTableAdapter;
         private System.Windows.Forms.Label lblMessage;
+        private System.Windows.Forms.Label lblCustomerName;
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Label label6;
     }
 }

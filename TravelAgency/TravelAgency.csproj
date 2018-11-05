@@ -73,9 +73,13 @@
     <Compile Include="Model\Hotel.cs" />
     <Compile Include="Model\Service.cs" />
     <Compile Include="Model\Transportation.cs" />
-    <Compile Include="Model\TravelAgency.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Repository\DbConn.cs" />
     <Compile Include="View\BookedPackagesView.cs">
       <SubType>Form</SubType>
@@ -109,14 +113,9 @@
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="View\BookedPackagesView.resx">
       <DependentUpon>BookedPackagesView.cs</DependentUpon>
     </EmbeddedResource>
@@ -165,6 +164,7 @@
     <None Include="AgencyDataSet2.xss">
       <DependentUpon>AgencyDataSet2.xsd</DependentUpon>
     </None>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -85,7 +85,7 @@ namespace TravelAgency.View
             }
         }
 
-        private double CalculatePrice(int hotelId, int entertainmentId, int transportationId)
+        private double CalculatePrice(int hotelId, int entertainmentId, int transportationId, int duration)
         {
             try
             {
@@ -97,7 +97,7 @@ namespace TravelAgency.View
                 double entertainPrice = Convert.ToDouble(entertainmentDataSet.Tables[0].Rows[0][0]);
                 double transferPrice = Convert.ToDouble(transportationDataSet.Tables[0].Rows[0][0]);
 
-                return hotelPrice + entertainPrice + transferPrice;
+                return (hotelPrice*duration) + entertainPrice + transferPrice;
             }
             catch(Exception ex)
             {
@@ -131,7 +131,7 @@ namespace TravelAgency.View
                 // Save Booking Information
 
                 Booking booking = new Booking(dtStartDate.Text, int.Parse(txtNights.Text), txtDestination.Text, entertainment,
-               hotel, transportation, CalculatePrice(hotel,entertainment,transportation), duration);
+               hotel, transportation, CalculatePrice(hotel,entertainment,transportation,duration), duration);
                 if (_editMode)
                 {
                     bookingController.EditBooking(_id,booking);
@@ -152,11 +152,6 @@ namespace TravelAgency.View
            
         }
 
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void BookingView_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'agencyDataSet2.TA_Transportation' table. You can move, or remove it, as needed.
@@ -166,6 +161,7 @@ namespace TravelAgency.View
             // TODO: This line of code loads data into the 'agencyDataSet.TA_Hotel' table. You can move, or remove it, as needed.
             this.tA_HotelTableAdapter.Fill(this.agencyDataSet.TA_Hotel);
             CenterToScreen();
+    
         }
     }
 }

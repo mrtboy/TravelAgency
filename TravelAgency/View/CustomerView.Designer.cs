@@ -129,6 +129,8 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.SkyBlue;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.lblMessage);
             this.panel1.Controls.Add(this.btnSubmit);
             this.panel1.Controls.Add(this.btnClear);
@@ -229,6 +231,7 @@
             // 
             // panel2
             // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.btnDeleteCustomer);
             this.panel2.Controls.Add(this.lblMessage2);
             this.panel2.Controls.Add(this.txtCustomerId);

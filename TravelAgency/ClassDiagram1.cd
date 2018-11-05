@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
+  <Class Name="TravelAgency.View.Booked_Packages" Collapsed="true">
+    <Position X="13.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>cAAAAEAABCQAABBJSACEAAoCkAACIEAECAQBgADKAAI=</HashCode>
+      <FileName>View\BookedPackagesView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgency.View.BookingView">
+    <Position X="20.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>URgAAgMAACAAELAICADAAGACUIIgoAMEAACAgchCAAA=</HashCode>
+      <FileName>View\BookingView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgency.View.CustomerView">
+    <Position X="18.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QgCgAAAAADACABAgAACAAEAyAIJIIAEgAEABAUDIAAA=</HashCode>
+      <FileName>View\CustomerView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgency.View.LoadView">
+    <Position X="17" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAACQAABAAAACAAAACAAAAAAAAACAAAAhRAAA=</HashCode>
+      <FileName>View\LoadView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgency.View.RegisterServiceView">
+    <Position X="15" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>7wIAAAAAACAAABAISECAhABCAIICIAEAEgIAAUBCABA=</HashCode>
+      <FileName>View\RegisterServiceView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgency.Repository.DbConn">
+    <Position X="11.25" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAFAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Repository\DbConn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgency.Model.Booking">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAgAAACAAAAAAAAAAAAAAAAQBAEAAQAAEAiAAA=</HashCode>
+      <FileName>Model\Booking.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgency.Model.Customer">
+    <Position X="4" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAAAAAAAAEAAAAAAAAAAAQAAACAAAAIAAAAAg=</HashCode>
+      <FileName>Model\Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgency.Model.Entertainment">
+    <Position X="2.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Entertainment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgency.Model.Hotel" Collapsed="true">
+    <Position X="4" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Hotel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgency.Model.Service">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Model\Service.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgency.Model.Transportation">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Model\Transportation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgency.Controller.BookingController">
+    <Position X="9.25" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAYAAAAAAAAAQIAAAA=</HashCode>
+      <FileName>Controller\BookingController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgency.Controller.CustomerController">
+    <Position X="9" Y="1.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAACAAAAAAIAgEAAAAAAA=</HashCode>
+      <FileName>Controller\CustomerController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgency.Controller.EntertainmentController">
+    <Position X="6.75" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAFAEAAAAAAAAAAAAAAAAAAAAgABAAA=</HashCode>
+      <FileName>Controller\EntertainmentController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgency.Controller.HotelController">
+    <Position X="11.25" Y="1.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAIAAAAAEAAAQAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Controller\HotelController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TravelAgency.Controller.TransportationController">
+    <Position X="6.75" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAEIAAAAAAAACAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controller\TransportationController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
